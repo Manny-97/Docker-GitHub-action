@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Echo Github Actions
-        run: echo "Hi, this is $NAME I am a $PROFESSION by profession and $PASSION is my passion."
+      - name: Build Docker Image
+        run: docker build -t demo
 
   post-builds:
     runs-on: ubuntu-latest
