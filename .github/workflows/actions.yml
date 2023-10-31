@@ -5,13 +5,18 @@ on:
     branches:
       - main
 
+env:
+  NAME: "MUHAMMED JIMOH"
+  PROFESSION: "DATA ENGINEER"
+  PASSION: "DATA ENTHUSIAST"
+
 jobs:
   builds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Echo Github Actions
-        run: ls -al
+        run: "Hi, this is $NAME I am a $PROFESSION by profession and $PASSION is my passion."
 
   post-builds:
     runs-on: ubuntu-latest
