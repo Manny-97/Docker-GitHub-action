@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker Image
-        run: docker build -t demo
+        run: docker build -t demo .
 
   post-builds:
     runs-on: ubuntu-latest
