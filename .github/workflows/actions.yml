@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/d2bwebapp:latest, ${{ secrets.DOCKER_USERNAME }}/d2bwebapp:${{ github.run_number }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/data2botswebapp:latest, ${{ secrets.DOCKER_USERNAME }}/data2botswebapp:${{ github.run_number }}
